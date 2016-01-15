@@ -265,11 +265,10 @@ def input_parser(data,command):
    
 class TCPServerChange(SocketServer.TCPServer):
   def server_close(self):
-       print"CLOSING SERVER"
+       print""
   def close_request(self, request):
-        print "Called to clean up an individual request."
+        print ""
   def shutdown_request(self, request):
-        print "howya doing trying to close this socket are ya"
         print request
 
 
