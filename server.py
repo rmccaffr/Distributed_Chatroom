@@ -265,9 +265,9 @@ def input_parser(data,command):
    
 class TCPServerChange(SocketServer.TCPServer):
   def server_close(self):
-       print""
+       print " "
   def close_request(self, request):
-        print ""
+        print " "
   def shutdown_request(self, request):
         print request
 
